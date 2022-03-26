@@ -5,4 +5,4 @@ redis:
     db: REDIS_MASTER_DB
 
 select-configuration:
-  title: 셀렉트 테스트 for Render.com
+  title: TITLE
