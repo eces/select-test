@@ -52,6 +52,8 @@ select-configuration:
         - type: markdown
           content: >
             ## 7일 가입자 조회
+
+            > 안녕하세요 !
         
     - path: users/dormant
       blocks:
