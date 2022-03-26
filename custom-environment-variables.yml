@@ -1,0 +1,8 @@
+redis:
+  master:
+    host: REDIS_MASTER_HOST
+    port: REDIS_MASTER_PORT
+    db: REDIS_MASTER_DB
+
+select-configuration:
+  title: 셀렉트 테스트 for Render.com
