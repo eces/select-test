@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  select:
+    image: ghcr.io/eces/select
+    env_file: ./docker.env
+    environment:
+      - PORT=9400
+      - REDIS_MASTER_HOST=redis
+    ports:
+      - "9400:9400"
+    volumes:
+      - ./default.yml:/app/default.yml
+      - ./custom-environment-variables.yml:/app/custom-environment-variables.yml
+    links:
+      - redis
+  redis:
+    image: redis
